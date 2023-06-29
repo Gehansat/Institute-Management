@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Student Report</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            font-size: 10px !important;
+            border: 1px solid #5bc0de !important;
+            margin: 5px !important;
+            height: 300mm !important;
+
+        }
+        .bg-theme-col{
+            background-color: #5bc0de !important;
+            color: #fff !important;
+        }
+
+        .search{
+            margin-bottom: 15px !important;
+        }
+
+        .search input{
+            padding: 5px 10px !important;
+            border: 2px solid #5bc0de !important;
+            width: 30% !important;
+        }
+
+        .search button{
+            padding: 5px 25px !important;
+            border: 2px solid #5bc0de !important;
+        }
+
+        .btn-bind-left{
+            border-top-right-radius: 0px !important;
+            border-bottom-right-radius: 0px !important;
+        }
+
+        .btn-bind-right{
+            border-top-left-radius: 0px !important;
+            border-bottom-left-radius: 0px !important;
+        }
+
+        .table-name{
+            margin: 0 !important;
+            background: #5bc0de !important;
+            color: #fff !important;
+            padding: 10px !important;
+            border-top-left-radius: 5px !important;
+            border-top-right-radius: 5px !important;
+            border-bottom: 2px solid #43aece !important;
+        }
+
+        .btn-clear{
+            display: none !important;
+            background: #5bc0de !important;
+            color: #fff !important;
+            font-weight: bold !important;
+            border-bottom-left-radius: 25px !important;
+            border-bottom-right-radius: 25px !important;
+            font-size: 20px !important;
+            padding: 0px 15px 5px 15px !important;
+        }
+
+        .del-pad{
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+
+        .mark-in{
+            padding: 5px 5px !important;
+            border-radius: 5px 0px 0px 5px !important;
+            border: 1px solid #c8c0c0 !important;
+        }
+
+        .mark-btn{
+            padding: 4px 10px !important;
+            border-radius: 0px 5px 5px 0px !important;
+            background: #f0ad4e !important;
+            border: 2px solid #f0ad4e !important;
+            color: #fff !important;
+        }
+
+    </style>
+
+  </head>
+  <body>
+
+    <h5 style="text-align: center;text-align: center;background: #5bc0de !important;padding: 10px !important;padding-top: 12px !important;font-weight: bold !important;color: #fff !important;margin-top: 0px !important;">Student Report</h5>
+
+    <div class="row" style="padding: 0px 30px 30px 30px !important;">
+
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            
+            <ul style="list-style-type:square;">
+                <li>
+                    <h5 style="text-align: left;">Total Students: {{total}}</h5>
+                </li>
+            </ul>
+
+            <hr/>
+
+            <label class="table-name"><i class="fa fa-book" style="color: #fff !important;"></i> Students</label>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>SID</th>
+                    <th>Name</th>
+                    <th>Photo</th>
+                    <th>NIC</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Guardian's name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{#each inData}}
+                    
+                    <tr>
+                        <td>{{this.sid}}</td>
+                        <td>{{this.fname}} {{this.lname}}</td>
+                        <td><img src="http://localhost:8070/download?sid={{this.sid}}" height='50px' /></td>
+                        <td>{{this.nic}}</td>
+                        <td>{{this.bdate}}</td>
+                        <td>{{this.gender}}</td>
+                        <td>{{this.address}}</td>
+                        <td>{{this.telephone}}</td>
+                        <td>{{this.email}}</td>
+                        <td>{{this.guardian}}</td>
+                        <td>{{this.uname}}</td>
+                    </tr>
+
+                    {{/each}}
+
+                    </tbody>
+                  </table>
+    
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+      
+    </ul>
+  </body>
+</html>
