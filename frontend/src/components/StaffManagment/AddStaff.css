@@ -1,0 +1,20 @@
+.form-submit {
+    text-align: right; }
+
+.form-group {
+        font-style: bold;
+        margin-bottom: 23px; }   
+        
+.heading-section{
+        margin-top: 20px;
+        color: green;
+}
+
+.form-radio-group {
+        flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -o-flex-direction: column;
+        -ms-flex-direction: column; } 
+
+      

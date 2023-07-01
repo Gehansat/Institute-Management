@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    
+    
+  }
+  body{
+   
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+  }
+  
+  .row {
+    margin-left:-5px;
+    margin-right:-5px;
+  }
+    
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  table#notice {
+    
+    margin-left: 15%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 70%;
+    border: 1px solid #ddd;
+    
+  }
+  
+  th, td {
+    padding: 10px;
+    
+    text-align: center;
+    padding: 16px;
+
+  }
+  
+  tr:nth-child(even) {
+    background-color: #d2daf07e;
+  }
+  
+  .headertop{
+    background-color: aqua;
+    background-image: url(../UserViewNoticeBoard/images/dash1.png);
+    height: 200px;
+    margin-bottom: 10px;
+  }
+ .toptopic{
+   margin-bottom: 10px;
+   padding: 30px;
+   
+ }

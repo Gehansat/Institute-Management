@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    
+    
+  }
+  body{
+    
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+  }
+  
+  .row {
+    margin-left:-5px;
+    margin-right:-5px;
+  }
+    
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  table#notice {
+    
+    margin-left: 15%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 70%;
+    border: 1px solid #ddd;
+    
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .addnew{
+    margin: 10px;
+    padding: 10px;
+    color: rgb(13, 45, 59);
+    text-align: center;
+  }
+ 

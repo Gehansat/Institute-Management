@@ -1,0 +1,36 @@
+.sideBar-item{
+  padding: 30px 10px;
+  text-align: center;
+  background-color: #abc0cf;
+  color: #000;
+  border:2px solid #97a2aa;
+}
+
+.text-right{
+  text-align: right !important;
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+.footerBottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navPadding{
+  padding-left: 0px !important;
+}
+
+ .table-dark {
+  --bs-table-bg: #212529;
+  --bs-table-striped-bg: #337ab7;
+  --bs-table-striped-color: #fff;
+  --bs-table-active-bg: #373b3e;
+  --bs-table-active-color: #fff;
+  --bs-table-hover-bg: #323539;
+  --bs-table-hover-color: #fff;
+  color: #fff;
+}
